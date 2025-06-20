@@ -1,8 +1,8 @@
-# 🩺 AI-Powered Healthcare Intelligence Network
+# 🩺 AI-Driven Medical Intelligence Hub
 
 _Revolutionizing Healthcare with AI-Driven Predictions, Recommendations, and Insights._
 
-![Banner](./utils/banner.png)
+![Banner](./utils/1.jpg)
 
 ---
 
@@ -173,8 +173,7 @@ Feel free to use, modify, and contribute.
 ## 📬 Contact
 
 **Surya Saroj**  
-📧 [coolguysurya@example.com]  
-🔗 [LinkedIn](https://linkedin.com/in/surya-saroj) | [GitHub](https://github.com/coolguy-sree)
+🔗 [LinkedIn](https://www.linkedin.com/in/iamsuryasarojsistla24/) | [GitHub](https://github.com/coolguy-sree)
 
 ---
 
