@@ -14,7 +14,7 @@ _Revolutionizing Healthcare with AI-Driven Predictions, Recommendations, and Ins
 
 ---
 
-[![Watch Demo](./utils/2.png)](https://drive.google.com/file/d/1pXOFICXngShZTVbScYswAayKuf-jsOv9/view?usp=sharing)
+[![Watch Demo](./utils/2.png)](https://drive.google.com/file/d/1pXOFICXngShZTVbScYswAayKuf-jsOv9/view?usp=sharing) **click this image to watch the demo**
 
 
 ## 🚀 Features
