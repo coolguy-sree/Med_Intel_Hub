@@ -103,7 +103,7 @@ streamlit run pages/4_Medibot.py
 
 ### Demo Video
 
-![Demo Video](./utils/Media1.mp4)
+![Demo Video](https://drive.google.com/file/d/1pXOFICXngShZTVbScYswAayKuf-jsOv9/view?usp=sharing)
 
 ### Screenshots
 
