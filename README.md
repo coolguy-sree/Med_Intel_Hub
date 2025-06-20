@@ -54,7 +54,7 @@ Estimates heart disease probability using health & lifestyle inputs.
 
 **Screenshots:**
 
-![Heart Risk Input](./utils/4.png)
+![Heart Risk Input](./utils/6.png)
 
 ---
 
