@@ -14,6 +14,9 @@ _Revolutionizing Healthcare with AI-Driven Predictions, Recommendations, and Ins
 
 ---
 
+[![Watch Demo](./utils/Screenshot 2025-06-20 080440)](https://drive.google.com/file/d/1pXOFICXngShZTVbScYswAayKuf-jsOv9/view?usp=sharing)
+
+
 ## 🚀 Features
 
 ### 💡 Disease Prediction & Medical Recommendation
@@ -25,8 +28,7 @@ Predict diseases based on user symptoms and provide relevant treatments and life
 
 **Screenshots:**
 
-![Disease Prediction](./utils/disease1.png)
-![Treatment Recommendation](./utils/disease2.png)
+![Disease Prediction](./utils/Screenshot 2025-06-20 080511.png)
 
 ---
 
@@ -39,8 +41,7 @@ Suggests alternative medications using NLP & similarity search.
 
 **Screenshots:**
 
-![Drug Search](./utils/drug1.png)
-![Drug Match](./utils/drug2.png)
+![Drug Search](./utils/Screenshot 2025-06-20 080606.png)
 
 ---
 
@@ -67,8 +68,7 @@ A chatbot that answers medical queries in real-time using **Mistral-7B-Instruct*
 
 **Screenshots:**
 
-![Medibot QA](./utils/chat1.png)
-![RAG Output](./utils/chat2.png)
+![Medibot QA](./utils/Screenshot 2025-06-20 080632.png)
 
 ---
 
