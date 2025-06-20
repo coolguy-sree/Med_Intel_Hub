@@ -28,7 +28,7 @@ Predict diseases based on user symptoms and provide relevant treatments and life
 
 **Screenshots:**
 
-![Disease Prediction](./utils/Screenshot 2025-06-20 080511.png)
+![Disease Prediction](./utils/3.png)
 
 ---
 
@@ -41,7 +41,7 @@ Suggests alternative medications using NLP & similarity search.
 
 **Screenshots:**
 
-![Drug Search](./utils/Screenshot 2025-06-20 080606.png)
+![Drug Search](./utils/4.png)
 
 ---
 
@@ -54,8 +54,7 @@ Estimates heart disease probability using health & lifestyle inputs.
 
 **Screenshots:**
 
-![Heart Risk Input](./utils/heart1.png)
-![Heart Score Result](./utils/heart2.png)
+![Heart Risk Input](./utils/4.png)
 
 ---
 
@@ -68,7 +67,7 @@ A chatbot that answers medical queries in real-time using **Mistral-7B-Instruct*
 
 **Screenshots:**
 
-![Medibot QA](./utils/Screenshot 2025-06-20 080632.png)
+![Medibot QA](./utils/5.png)
 
 ---
 
