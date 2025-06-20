@@ -1,170 +1,181 @@
-# 🩺 AI-Driven Medical Intelligence Hub
+# 🩺 AI-Powered Healthcare Intelligence Network
 
-![Project Logo](./utils/1.jpg)
+_Revolutionizing Healthcare with AI-Driven Predictions, Recommendations, and Insights._
 
----
-
-## Short Description
-
-An AI-driven healthcare intelligence system that provides disease prediction based on symptoms, drug recommendations, heart disease risk assessment, and an AI-powered medical chatbot. This system leverages advanced machine learning models and natural language processing to assist users in making informed healthcare decisions.
+![Banner](./utils/banner.png)
 
 ---
 
-## Table of Contents
+## 📌 About This Project
 
-- [Features](#features)
-- [Installation Instructions](#installation-instructions)
-- [Usage Guide](#usage-guide)
-- [Screenshots and Demo Videos](#screenshots-and-demo-videos)
-- [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
-- [Contributing Guidelines](#contributing-guidelines)
-- [License](#license)
-- [Contact Information](#contact-information)
+**Medibot** is an intelligent, AI-driven healthcare platform designed to deliver real-time medical predictions, drug recommendations, heart disease risk assessment, and AI-powered medical Q&A. Built using cutting-edge Machine Learning (ML), Natural Language Processing (NLP), and Retrieval-Augmented Generation (RAG), it empowers both patients and medical professionals with early diagnosis, personalized recommendations, and data-driven insights.
+
+> 🎯 Developed using Streamlit, Hugging Face Transformers, LangChain, FAISS, and trained ML models (RandomForest, LightGBM).
 
 ---
 
-## Features
+## 🚀 Features
 
-- Disease prediction based on user-input symptoms using machine learning models.
-- Personalized drug recommendation system using NLP and similarity analysis.
-- Heart disease risk assessment with detailed risk factors and recommendations.
-- AI-powered medical chatbot for instant healthcare insights.
-- User-friendly web interface built with Streamlit.
-- Integration with Hugging Face models for advanced NLP capabilities.
+### 💡 Disease Prediction & Medical Recommendation
+Predict diseases based on user symptoms and provide relevant treatments and lifestyle suggestions.
+
+- ✅ Trained on medical symptom datasets using `RandomForestClassifier`
+- ✅ Returns disease name, description, medication, diet, and precautions
+- ✅ Fully interactive UI using Streamlit
+
+**Screenshots:**
+
+![Disease Prediction](./utils/disease1.png)
+![Treatment Recommendation](./utils/disease2.png)
 
 ---
 
-## Installation Instructions
+### 💊 AI-Powered Drug Recommendation
+Suggests alternative medications using NLP & similarity search.
 
-1. **Clone the repository:**
+- ✅ Uses `Cosine Similarity` for matching drug vectors
+- ✅ Trained on a curated dataset of drug names and compositions
+- ✅ Recommends safe alternatives to existing medicines
 
-```bash
-git clone <repository-url>
-cd AI-Powered-Healthcare-Intelligence-System-main
+**Screenshots:**
+
+![Drug Search](./utils/drug1.png)
+![Drug Match](./utils/drug2.png)
+
+---
+
+### 🪀 Heart Disease Risk Assessment
+Estimates heart disease probability using health & lifestyle inputs.
+
+- ✅ Models used: `LightGBM`, `EasyEnsembleClassifier`
+- ✅ Inputs: Age, BMI, smoking, alcohol use, medical history, etc.
+- ✅ Returns a personalized **Heart Risk Score** with preventive suggestions
+
+**Screenshots:**
+
+![Heart Risk Input](./utils/heart1.png)
+![Heart Score Result](./utils/heart2.png)
+
+---
+
+### 🤖 Medibot - AI Health Assistant (RAG + LLM)
+A chatbot that answers medical queries in real-time using **Mistral-7B-Instruct** and FAISS.
+
+- ✅ Uses **LangChain + FAISS** for context-aware medical Q&A
+- ✅ Hugging Face integration with Retrieval Augmented Generation (RAG)
+- ✅ Highly responsive LLM for fact-based medical advice
+
+**Screenshots:**
+
+![Medibot QA](./utils/chat1.png)
+![RAG Output](./utils/chat2.png)
+
+---
+
+## 📂 Folder Structure
+
+```
+📦 AI-Powered-Healthcare-Intelligence
+│── 📂 models/                   # Trained ML models
+│── 📂 data/                     # Medical datasets
+│── 📂 vectorstore/db_faiss/     # FAISS vector store
+│── 📂 utils/                    # Images, helper files
+│── 📂 pages/                    # Streamlit module pages
+│── 📜 home.py                   # Main Streamlit app
+│── 📜 requirements.txt          # Required dependencies
+│── 📜 .env                      # Environment variables (HF_TOKEN)
+│── 📜 README.md                 # Project documentation
+│── 📜 styles.css                # Custom CSS
 ```
 
-2. **Create and activate a virtual environment (optional but recommended):**
+---
 
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/coolguy-sree/Med_Intel_Hub.git
+cd Med_Intel_Hub
+```
+
+### 2️⃣ Create a Virtual Environment
 ```bash
 python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
+source venv/bin/activate      # On macOS/Linux
+venv\Scripts\activate         # On Windows
 ```
 
-3. **Install the required dependencies:**
-
+### 3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Set up environment variables:**
-
-- Create a `.env` file in the root directory.
-- Add your Hugging Face API token:
-
-```
-HF_TOKEN=your_huggingface_api_token_here
+### 4️⃣ Configure Environment
+Create a `.env` file and add:
+```env
+HF_TOKEN=your_huggingface_api_token
 ```
 
----
+> 🔐 Ensure `.env` is in your `.gitignore` and added as a **secret** if deploying.
 
-## Usage Guide
-
-- To run the Disease Prediction page:
-
+### 5️⃣ Run the Application
 ```bash
-streamlit run pages/1_Disease-Prediction-and-medical-recommendation.py
+streamlit run home.py
 ```
 
-- To run the Drug Recommendation page:
+---
 
+## 🚀 Deployment on Streamlit Cloud
+
+1. Push code to GitHub:
 ```bash
-streamlit run pages/2_drug_recommendation.py
+git add .
+git commit -m "Initial commit"
+git push origin main
 ```
 
-- To run the Heart Disease Risk Assessment page:
-
-```bash
-streamlit run pages/3_heart_Disease_Risk_Assesment.py
-```
-
-- To run the AI Medical Chatbot (Medibot) page:
-
-```bash
-streamlit run pages/4_Medibot.py
-```
+2. Go to [Streamlit Cloud](https://share.streamlit.io)
+3. Create new app → Select this repo
+4. Set `HF_TOKEN` in **Secrets**
+5. Click **Deploy**
 
 ---
 
-## Screenshots and Demo Videos
+## ⚙️ Technologies Used
 
-### Demo Video
-
-![Demo Video](https://drive.google.com/file/d/1pXOFICXngShZTVbScYswAayKuf-jsOv9/view?usp=sharing)
-
-### Screenshots
-
-![Heart Disease Risk Assessment](./utils/heart_disease.jpg)
-![Medical Chatbot](./utils/ph2.png)
-![Drug Recommendation](./utils/medss.png)
-![Disease Prediction](./utils/ph3.png)
+- **ML Models**: RandomForest, LightGBM, EasyEnsemble
+- **NLP & LLMs**: Hugging Face Transformers, LangChain, FAISS
+- **Web Framework**: Streamlit
+- **Data**: Pandas, NumPy, Pickle
+- **Visualization**: Plotly, SHAP
+- **LLM Backend**: Mistral-7B-Instruct
 
 ---
 
-## Technologies Used
+## 🔍 Why Use Medibot?
 
-- Python 3.13
-- Streamlit for web UI
-- Scikit-learn for machine learning models
-- Hugging Face Transformers and LangChain for NLP and LLM integration
-- FAISS for vector similarity search
-- Pandas and NumPy for data processing
-- Plotly for interactive visualizations
-
----
-
-## Folder Structure
-
-- `pages/` - Contains Streamlit app pages for different functionalities.
-- `models/` - Pre-trained machine learning models and encoders.
-- `data/` - Datasets used for training and reference.
-- `utils/` - Utility files including images, CSS, and demo videos.
-- `vectorstore/` - FAISS vector store for embeddings.
-- `medibot/` - Code related to the AI medical chatbot.
-- `requirements.txt` - Python dependencies.
-- `README.md` - Project documentation.
+- 🏥 AI-Powered Diagnosis & Recommendations
+- ⚕️ Personalized Medical Suggestions
+- 💬 Intelligent Medical Chatbot
+- 📊 Data-Driven Health Risk Analytics
+- ⏱️ Real-Time Results
+- 🔒 Privacy-first Design with Local Execution Option
 
 ---
 
-## Contributing Guidelines
+## 📜 License
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a Pull Request describing your changes.
-
-Please ensure your code follows the existing style and includes appropriate tests.
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and contribute.
 
 ---
 
-## License
+## 📬 Contact
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact Information
-
-- Maintainer: Surya Saroj Sistla 
-- Email: sistlasree24@gmail.com
-- GitHub: [coolguy-sree](https://github.com/coolguy-sree)
+**Surya Saroj**  
+📧 [coolguysurya@example.com]  
+🔗 [LinkedIn](https://linkedin.com/in/surya-saroj) | [GitHub](https://github.com/coolguy-sree)
 
 ---
 
-Thank you for using the AI-Powered Healthcare Intelligence System! Your feedback and contributions are highly appreciated.
+> _"Empowering the future of healthcare with intelligent systems."_ 🌐
